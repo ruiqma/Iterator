@@ -17,11 +17,7 @@ class MainActivity : AppCompatActivity() {
         val pokemonSelect: Iterator = pokedex.iterator()
         while (pokemonSelect.hasNext()) {
             val pokemon: Pokemon = pokemonSelect.next() as Pokemon
-            if (pokemon.type2 != "無"){
-                println("名前:" + pokemon.name + ", タイプ:" + pokemon.type1 + ", " + pokemon.type2)
-            } else {
-                println("名前:" + pokemon.name + ", タイプ:" + pokemon.type1)
-            }
+            println(pokemon.toString())
         }
     }
 }
